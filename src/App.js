@@ -24,6 +24,8 @@ export default function App() {
       <Route path="/product/:id" element={<ProtectedRoute><CardDetails /></ProtectedRoute>} />
       <Route path="/about" element={<ProtectedRoute><Aboutus /></ProtectedRoute>} />
       <Route path="/contact" element={<ProtectedRoute><Contact /></ProtectedRoute>} />
+      <Route path="*" element={<Signup />} /> 
+
     </Routes>
   );
 }
